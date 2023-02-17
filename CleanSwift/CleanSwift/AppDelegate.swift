@@ -11,4 +11,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         true
     }
+
+    func application(
+        _ app: UIApplication,
+        open url: URL,
+        options: [UIApplication.OpenURLOptionsKey: Any] = [:]
+    ) -> Bool {
+        guard let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true),
+              let host = components.host
+        else {
+            return false
+        }
+        guard let deepLink = DeepLink(rawValue: host) else {
+            return false
+        }
+        let vc = MainScreenViewController()
+        vc.handleDeepLink(deepLink)
+        return true
+    }
 }
