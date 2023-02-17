@@ -9,21 +9,65 @@
 /* Begin PBXBuildFile section */
 		6FBF9D40299D54CD0041EC64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D3F299D54CD0041EC64 /* AppDelegate.swift */; };
 		6FBF9D42299D54CD0041EC64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D41299D54CD0041EC64 /* SceneDelegate.swift */; };
-		6FBF9D44299D54CD0041EC64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D43299D54CD0041EC64 /* ViewController.swift */; };
+		6FBF9D44299D54CD0041EC64 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D43299D54CD0041EC64 /* MainScreenViewController.swift */; };
 		6FBF9D47299D54CD0041EC64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBF9D45299D54CD0041EC64 /* Main.storyboard */; };
 		6FBF9D49299D54D00041EC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FBF9D48299D54D00041EC64 /* Assets.xcassets */; };
 		6FBF9D4C299D54D00041EC64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBF9D4A299D54D00041EC64 /* LaunchScreen.storyboard */; };
+		6FBF9D56299D57610041EC64 /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D55299D57610041EC64 /* Astronomy.swift */; };
+		6FBF9D58299D58AE0041EC64 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D57299D58AE0041EC64 /* NetworkServiceProtocol.swift */; };
+		6FBF9D5A299D59390041EC64 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D59299D59390041EC64 /* NetworkService.swift */; };
+		6FBF9D5C299D59790041EC64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D5B299D59790041EC64 /* Constants.swift */; };
+		6FBF9D5E299D652B0041EC64 /* ImageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D5D299D652B0041EC64 /* ImageServiceProtocol.swift */; };
+		6FBF9D61299D65650041EC64 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D60299D65650041EC64 /* ImageService.swift */; };
+		6FBF9D6A299D70E80041EC64 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D69299D70E80041EC64 /* MainScreenRouter.swift */; };
+		6FBF9D6C299D71720041EC64 /* MainScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D6B299D71720041EC64 /* MainScreenAssembly.swift */; };
+		6FBF9D73299D76DC0041EC64 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D72299D76DC0041EC64 /* MainScreenInteractor.swift */; };
+		6FBF9D78299D77F70041EC64 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D77299D77F70041EC64 /* MainScreenPresenter.swift */; };
+		6FBF9D7C299D87B80041EC64 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D7B299D87B80041EC64 /* SecondScreenViewController.swift */; };
+		6FBF9D7E299E81760041EC64 /* MainScreenInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D7D299E81760041EC64 /* MainScreenInputModel.swift */; };
+		6FBF9D80299E99220041EC64 /* MainScreenViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D7F299E99220041EC64 /* MainScreenViewControllerProtocols.swift */; };
+		6FBF9D83299EA6610041EC64 /* MainScreenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D82299EA6610041EC64 /* MainScreenWorker.swift */; };
+		6FBF9D85299EB21D0041EC64 /* AstronomyDescriptionChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D84299EB21D0041EC64 /* AstronomyDescriptionChanged.swift */; };
+		6FBF9D87299EB25D0041EC64 /* SecondScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D86299EB25D0041EC64 /* SecondScreenProtocols.swift */; };
+		6FBF9D89299EB9A10041EC64 /* SecondScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D88299EB9A10041EC64 /* SecondScreenInteractor.swift */; };
+		6FBF9D8B299EB9EA0041EC64 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D8A299EB9EA0041EC64 /* SecondScreenPresenter.swift */; };
+		6FBF9D8D299EBA2D0041EC64 /* SecondScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D8C299EBA2D0041EC64 /* SecondScreenAssembly.swift */; };
+		6FBF9D8F299EBA3D0041EC64 /* SecondScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D8E299EBA3D0041EC64 /* SecondScreenRouter.swift */; };
+		6FBF9D91299EBA990041EC64 /* SecondScreenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D90299EBA990041EC64 /* SecondScreenWorker.swift */; };
+		6FBF9D93299EC5660041EC64 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF9D92299EC5660041EC64 /* DeepLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6FBF9D3C299D54CD0041EC64 /* CleanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBF9D3F299D54CD0041EC64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FBF9D41299D54CD0041EC64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6FBF9D43299D54CD0041EC64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FBF9D43299D54CD0041EC64 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		6FBF9D46299D54CD0041EC64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FBF9D48299D54D00041EC64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FBF9D4B299D54D00041EC64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FBF9D4D299D54D00041EC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FBF9D55299D57610041EC64 /* Astronomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
+		6FBF9D57299D58AE0041EC64 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		6FBF9D59299D59390041EC64 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6FBF9D5B299D59790041EC64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6FBF9D5D299D652B0041EC64 /* ImageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceProtocol.swift; sourceTree = "<group>"; };
+		6FBF9D60299D65650041EC64 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		6FBF9D69299D70E80041EC64 /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		6FBF9D6B299D71720041EC64 /* MainScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenAssembly.swift; sourceTree = "<group>"; };
+		6FBF9D72299D76DC0041EC64 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		6FBF9D77299D77F70041EC64 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		6FBF9D7B299D87B80041EC64 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		6FBF9D7D299E81760041EC64 /* MainScreenInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInputModel.swift; sourceTree = "<group>"; };
+		6FBF9D7F299E99220041EC64 /* MainScreenViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewControllerProtocols.swift; sourceTree = "<group>"; };
+		6FBF9D82299EA6610041EC64 /* MainScreenWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenWorker.swift; sourceTree = "<group>"; };
+		6FBF9D84299EB21D0041EC64 /* AstronomyDescriptionChanged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyDescriptionChanged.swift; sourceTree = "<group>"; };
+		6FBF9D86299EB25D0041EC64 /* SecondScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenProtocols.swift; sourceTree = "<group>"; };
+		6FBF9D88299EB9A10041EC64 /* SecondScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenInteractor.swift; sourceTree = "<group>"; };
+		6FBF9D8A299EB9EA0041EC64 /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
+		6FBF9D8C299EBA2D0041EC64 /* SecondScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenAssembly.swift; sourceTree = "<group>"; };
+		6FBF9D8E299EBA3D0041EC64 /* SecondScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenRouter.swift; sourceTree = "<group>"; };
+		6FBF9D90299EBA990041EC64 /* SecondScreenWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenWorker.swift; sourceTree = "<group>"; };
+		6FBF9D92299EC5660041EC64 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +100,69 @@
 		6FBF9D3E299D54CD0041EC64 /* CleanSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6FBF9D81299EA49E0041EC64 /* MainScreenScene */,
+				6FBF9D7A299D878E0041EC64 /* SecondScreenScene */,
 				6FBF9D3F299D54CD0041EC64 /* AppDelegate.swift */,
 				6FBF9D41299D54CD0041EC64 /* SceneDelegate.swift */,
-				6FBF9D43299D54CD0041EC64 /* ViewController.swift */,
+				6FBF9D55299D57610041EC64 /* Astronomy.swift */,
+				6FBF9D5F299D653A0041EC64 /* NetworkService */,
+				6FBF9D62299D67650041EC64 /* ImageService */,
+				6FBF9D5B299D59790041EC64 /* Constants.swift */,
 				6FBF9D45299D54CD0041EC64 /* Main.storyboard */,
 				6FBF9D48299D54D00041EC64 /* Assets.xcassets */,
 				6FBF9D4A299D54D00041EC64 /* LaunchScreen.storyboard */,
 				6FBF9D4D299D54D00041EC64 /* Info.plist */,
 			);
 			path = CleanSwift;
+			sourceTree = "<group>";
+		};
+		6FBF9D5F299D653A0041EC64 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				6FBF9D57299D58AE0041EC64 /* NetworkServiceProtocol.swift */,
+				6FBF9D59299D59390041EC64 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		6FBF9D62299D67650041EC64 /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				6FBF9D5D299D652B0041EC64 /* ImageServiceProtocol.swift */,
+				6FBF9D60299D65650041EC64 /* ImageService.swift */,
+			);
+			path = ImageService;
+			sourceTree = "<group>";
+		};
+		6FBF9D7A299D878E0041EC64 /* SecondScreenScene */ = {
+			isa = PBXGroup;
+			children = (
+				6FBF9D7B299D87B80041EC64 /* SecondScreenViewController.swift */,
+				6FBF9D88299EB9A10041EC64 /* SecondScreenInteractor.swift */,
+				6FBF9D8A299EB9EA0041EC64 /* SecondScreenPresenter.swift */,
+				6FBF9D8C299EBA2D0041EC64 /* SecondScreenAssembly.swift */,
+				6FBF9D84299EB21D0041EC64 /* AstronomyDescriptionChanged.swift */,
+				6FBF9D8E299EBA3D0041EC64 /* SecondScreenRouter.swift */,
+				6FBF9D90299EBA990041EC64 /* SecondScreenWorker.swift */,
+				6FBF9D86299EB25D0041EC64 /* SecondScreenProtocols.swift */,
+			);
+			path = SecondScreenScene;
+			sourceTree = "<group>";
+		};
+		6FBF9D81299EA49E0041EC64 /* MainScreenScene */ = {
+			isa = PBXGroup;
+			children = (
+				6FBF9D43299D54CD0041EC64 /* MainScreenViewController.swift */,
+				6FBF9D72299D76DC0041EC64 /* MainScreenInteractor.swift */,
+				6FBF9D77299D77F70041EC64 /* MainScreenPresenter.swift */,
+				6FBF9D6B299D71720041EC64 /* MainScreenAssembly.swift */,
+				6FBF9D7D299E81760041EC64 /* MainScreenInputModel.swift */,
+				6FBF9D69299D70E80041EC64 /* MainScreenRouter.swift */,
+				6FBF9D82299EA6610041EC64 /* MainScreenWorker.swift */,
+				6FBF9D7F299E99220041EC64 /* MainScreenViewControllerProtocols.swift */,
+				6FBF9D92299EC5660041EC64 /* DeepLink.swift */,
+			);
+			path = MainScreenScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +277,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FBF9D44299D54CD0041EC64 /* ViewController.swift in Sources */,
+				6FBF9D44299D54CD0041EC64 /* MainScreenViewController.swift in Sources */,
 				6FBF9D40299D54CD0041EC64 /* AppDelegate.swift in Sources */,
+				6FBF9D8B299EB9EA0041EC64 /* SecondScreenPresenter.swift in Sources */,
+				6FBF9D87299EB25D0041EC64 /* SecondScreenProtocols.swift in Sources */,
+				6FBF9D7C299D87B80041EC64 /* SecondScreenViewController.swift in Sources */,
+				6FBF9D61299D65650041EC64 /* ImageService.swift in Sources */,
+				6FBF9D6C299D71720041EC64 /* MainScreenAssembly.swift in Sources */,
+				6FBF9D89299EB9A10041EC64 /* SecondScreenInteractor.swift in Sources */,
+				6FBF9D73299D76DC0041EC64 /* MainScreenInteractor.swift in Sources */,
+				6FBF9D91299EBA990041EC64 /* SecondScreenWorker.swift in Sources */,
+				6FBF9D56299D57610041EC64 /* Astronomy.swift in Sources */,
+				6FBF9D6A299D70E80041EC64 /* MainScreenRouter.swift in Sources */,
+				6FBF9D7E299E81760041EC64 /* MainScreenInputModel.swift in Sources */,
+				6FBF9D5E299D652B0041EC64 /* ImageServiceProtocol.swift in Sources */,
+				6FBF9D8D299EBA2D0041EC64 /* SecondScreenAssembly.swift in Sources */,
 				6FBF9D42299D54CD0041EC64 /* SceneDelegate.swift in Sources */,
+				6FBF9D78299D77F70041EC64 /* MainScreenPresenter.swift in Sources */,
+				6FBF9D93299EC5660041EC64 /* DeepLink.swift in Sources */,
+				6FBF9D85299EB21D0041EC64 /* AstronomyDescriptionChanged.swift in Sources */,
+				6FBF9D5C299D59790041EC64 /* Constants.swift in Sources */,
+				6FBF9D5A299D59390041EC64 /* NetworkService.swift in Sources */,
+				6FBF9D80299E99220041EC64 /* MainScreenViewControllerProtocols.swift in Sources */,
+				6FBF9D58299D58AE0041EC64 /* NetworkServiceProtocol.swift in Sources */,
+				6FBF9D8F299EBA3D0041EC64 /* SecondScreenRouter.swift in Sources */,
+				6FBF9D83299EA6610041EC64 /* MainScreenWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
