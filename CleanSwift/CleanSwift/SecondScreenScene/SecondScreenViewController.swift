@@ -15,8 +15,8 @@ final class SecondScreenViewController: UIViewController {
 
     // MARK: - Public Properties
 
-    var interactor: SecondScreenInteractorProtocol?
-    var router: SecondScreenRouterProtocol?
+    var interactor: SecondScreenBusinessLogic?
+    var router: SecondScreenRoutingLogic?
 
     // MARK: - LifeCycle
 
@@ -60,4 +60,4 @@ final class SecondScreenViewController: UIViewController {
 }
 
 /// SecondScreenViewControllerProtocol
-extension SecondScreenViewController: SecondScreenViewControllerProtocol {}
+extension SecondScreenViewController: SecondScreenDisplayLogic {}

@@ -11,10 +11,10 @@ struct Astronomy: Codable {
         case explanation
     }
 
-    /// Имя артиста
+    /// Название фотографии
     let title: String
-    /// Фотография артиста
+    /// Фотография
     let photo: String
-    /// Описание
+    /// Описание фотографии
     let explanation: String
 }

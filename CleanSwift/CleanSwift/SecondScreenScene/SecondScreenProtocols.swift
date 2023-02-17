@@ -4,37 +4,37 @@
 import Foundation
 
 /// Протокол второго экрана
-protocol SecondScreenViewControllerProtocol {
-    var interactor: SecondScreenInteractorProtocol? { get }
-    var router: SecondScreenRouterProtocol? { get }
+protocol SecondScreenDisplayLogic {
+    var interactor: SecondScreenBusinessLogic? { get }
+    var router: SecondScreenRoutingLogic? { get }
 
     func displayInitForm(_ viewModel: AstronomyDescriptionChanged.GetAstronomyDescription.ViewModel)
 }
 
 /// Протокол интерактора второго экрана
-protocol SecondScreenInteractorProtocol {
-    var secondScreenWorker: SecondScreenWorkerProtocol? { get }
-    var secondScreenPresenter: SecondScreenPresenterProtocol? { get }
+protocol SecondScreenBusinessLogic {
+    var secondScreenWorker: SecondScreenWorkerLogic? { get }
+    var secondScreenPresenter: SecondScreenPresentationLogic? { get }
 
     func requestInitForm()
 }
 
 /// Протокол презентера второго экрана
-protocol SecondScreenPresenterProtocol {
-    var secondScreenViewController: SecondScreenViewControllerProtocol? { get }
+protocol SecondScreenPresentationLogic {
+    var secondScreenViewController: SecondScreenDisplayLogic? { get }
 
     func presentInitForm(_ model: AstronomyDescriptionChanged.GetAstronomyDescription.Response)
 }
 
 /// Протокол хранилища данных вторго экрана
-protocol SecondScreenDataStoreProtocol {
+protocol SecondScreenDataStore {
     var astronomyDescription: String? { get set }
 }
 
 /// Протокол воркера второго экрана
-protocol SecondScreenWorkerProtocol {}
+protocol SecondScreenWorkerLogic {}
 
 /// Протокол роутера второго экрана
-protocol SecondScreenRouterProtocol {
-    var secondScreenViewController: SecondScreenViewControllerProtocol? { get }
+protocol SecondScreenRoutingLogic {
+    var secondScreenViewController: SecondScreenDisplayLogic? { get }
 }

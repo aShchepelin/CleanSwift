@@ -25,8 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let deepLink = DeepLink(rawValue: host) else {
             return false
         }
-        let vc = MainScreenViewController()
-        vc.handleDeepLink(deepLink)
+        let mainScreenViewController = MainScreenViewController()
+        mainScreenViewController.handleDeepLink(deepLink)
         return true
     }
 }

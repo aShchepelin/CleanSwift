@@ -12,6 +12,7 @@ enum AstronomyDescriptionChanged {
         struct Response {
             let astronomyDescription: String
         }
+
         /// Вью Модель
         struct ViewModel {
             let astronomyDescription: String

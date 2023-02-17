@@ -4,18 +4,18 @@
 import Foundation
 
 /// Роутер второго экрана
-final class SecondScreenRouter: SecondScreenRouterProtocol {
+final class SecondScreenRouter: SecondScreenRoutingLogic {
     // MARK: - Public Properties
 
-    var secondScreenViewController: SecondScreenViewControllerProtocol?
+    var secondScreenViewController: SecondScreenDisplayLogic?
 
     // MARK: - Private Properties
 
-    private var dataStore: SecondScreenDataStoreProtocol?
+    private var dataStore: SecondScreenDataStore?
 
     // MARK: - Init
 
-    init(dataStore: SecondScreenDataStoreProtocol?) {
+    init(dataStore: SecondScreenDataStore?) {
         self.dataStore = dataStore
     }
 }

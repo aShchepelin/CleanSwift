@@ -1,11 +1,11 @@
-// MainScreenViewControllerProtocols.swift
+// MainScreenProtocols.swift
 // Copyright © RoadMap. All rights reserved.
 
 import UIKit
 
 /// Протокол главного экрана
 protocol MainScreenDisplayLogic {
-    var mainScreenInteractor: MainScreenInteractorProtocol? { get }
+    var mainScreenInteractor: MainScreenBusinessLogic? { get }
     var mainScreenRouter: MainScreenRoutingLogic? { get }
 
     func displayInitForm(_ model: MainScreenInputModel.InitForm.ViewModel)
@@ -13,7 +13,7 @@ protocol MainScreenDisplayLogic {
 }
 
 /// Протокол интерактора главного экрана
-protocol MainScreenInteractorProtocol {
+protocol MainScreenBusinessLogic {
     var mainScreenWorker: MainScreenWorkerLogic? { get }
     var mainScreenPresenter: MainScreenPresentationLogic? { get }
 

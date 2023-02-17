@@ -4,4 +4,4 @@
 import Foundation
 
 /// Воркер второго экрана
-final class SecondScreenWorker: SecondScreenWorkerProtocol {}
+final class SecondScreenWorker: SecondScreenWorkerLogic {}

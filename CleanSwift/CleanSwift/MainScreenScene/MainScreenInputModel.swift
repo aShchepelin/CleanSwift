@@ -13,6 +13,7 @@ enum MainScreenInputModel {
             let astronomyInfo: Astronomy?
             let astronomyImage: Data?
         }
+
         /// Вью модель
         struct ViewModel {
             let astronomyInfo: Astronomy?

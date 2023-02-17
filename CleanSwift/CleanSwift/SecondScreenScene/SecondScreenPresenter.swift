@@ -4,10 +4,10 @@
 import Foundation
 
 /// Презентер второго экрана
-final class SecondScreenPresenter: SecondScreenPresenterProtocol {
+final class SecondScreenPresenter: SecondScreenPresentationLogic {
     // MARK: - Public Properties
 
-    var secondScreenViewController: SecondScreenViewControllerProtocol?
+    var secondScreenViewController: SecondScreenDisplayLogic?
 
     // MARK: - Public Methods
 

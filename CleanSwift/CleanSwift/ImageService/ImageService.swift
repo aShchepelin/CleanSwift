@@ -18,7 +18,6 @@ final class ImageService: ImageServiceProtocol {
                 completion(.failure(error))
                 return
             }
-
             guard let data = data else {
                 return
             }

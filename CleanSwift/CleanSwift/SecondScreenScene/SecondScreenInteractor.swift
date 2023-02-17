@@ -4,11 +4,11 @@
 import Foundation
 
 /// Интерактор второго экрана
-final class SecondScreenInteractor: SecondScreenInteractorProtocol {
+final class SecondScreenInteractor: SecondScreenBusinessLogic {
     // MARK: - Public Properties
 
-    var secondScreenWorker: SecondScreenWorkerProtocol?
-    var secondScreenPresenter: SecondScreenPresenterProtocol?
+    var secondScreenWorker: SecondScreenWorkerLogic?
+    var secondScreenPresenter: SecondScreenPresentationLogic?
     var astronomyDescription: String?
 
     // MARK: - Public Methods
@@ -21,4 +21,4 @@ final class SecondScreenInteractor: SecondScreenInteractorProtocol {
 }
 
 /// SecondScreenDataStoreProtocol
-extension SecondScreenInteractor: SecondScreenDataStoreProtocol {}
+extension SecondScreenInteractor: SecondScreenDataStore {}

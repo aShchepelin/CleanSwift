@@ -4,7 +4,7 @@
 import Foundation
 
 /// Интерактор главного экрана
-final class MainScreenInteractor: MainScreenInteractorProtocol {
+final class MainScreenInteractor: MainScreenBusinessLogic {
     // MARK: - Public Properties
 
     var mainScreenPresenter: MainScreenPresentationLogic?

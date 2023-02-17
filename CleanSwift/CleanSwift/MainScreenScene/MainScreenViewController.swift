@@ -30,7 +30,7 @@ final class MainScreenViewController: UIViewController {
 
     // MARK: - Public Properties
 
-    var mainScreenInteractor: MainScreenInteractorProtocol?
+    var mainScreenInteractor: MainScreenBusinessLogic?
     var mainScreenRouter: MainScreenRoutingLogic?
     var astronomy: Astronomy?
 
